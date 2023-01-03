@@ -1,0 +1,22 @@
+--> see videos,upload ,deltele
+--> user registeration, edit profile
+--> rate videos
+--> comments
+--> channel list, update,delete
+
+
+video
+user
+comments
+channel
+
+rate --> activity
+
+CRUD = create, read, update, delete
+
+create -> POST
+read -> GET
+update -> PUT/POST
+delete -> DELETE
+
+

@@ -1,0 +1,56 @@
+- user should be able to tweet
+    - message  - 150 characters
+    - user-id
+    - craeted at
+    - ip-address
+    - geo-coordinates(optional)
+
+-we should be able to list all tweet of a user
+    - id
+    - message
+    - user-id
+    - user-display-name
+    - user-handle
+    - location
+
+    metrics- comments,like
+
+
+req= GET  /tweets?user-id=34
+
+res= 
+[
+    {
+            "id":466,
+            "user-id":34,
+             "user-display-name":"pk",
+            "user-handle":"pk4956"
+            "message":"this is a tweet message",
+            "location":"new delhi",
+            "metrics":{
+                "likes":5767,
+                "comments":45
+            }
+    }
+]
+
+req= POST   /tweets
+{
+ "user-id":34,
+ "message":"message in the tweet we want to post now ",
+ "geo-coordinates":"4546.65,56,56.6"//optional
+}
+
+res= 200
+{
+    "id":466,
+    "user-id":34,
+    "user-display-name":"pk",
+    "user-handle":"pk4956"
+    "message":"this is a tweet message",
+    "location":"new delhi",
+    "metrics":{
+        "likes":5767,
+        "comments":45
+    }
+}
