@@ -10,4 +10,6 @@ app.use(cors({origin:'*'}))
 app.use('/api/product',productRoute);
 app.use('/api/user',userRoute);
 
-app.listen(8080);
+// app.listen(8080);
+
+module.exports =  app
